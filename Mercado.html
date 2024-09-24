@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cimi Supermercados</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="Imagens/Logo/Logotipo Cimi Supermercados .png">
+</head>
+
+<body>
+    <header> <!--Criar primeiramente o header para inicar a parte superior-->
+        <div class="principal">
+            <div>
+                <div class="suporte">
+                    <img src="Imagens/Icones/atendente.png" alt="Atendimento ao Cliente" height="80px" width="80px">
+                    <div class="suporteCliente">
+                        <span Suporte ao Cliente>Suporte ao Cliente</span>
+
+
+                    </div>
+                    <div class="logo">
+                        <img src="Imagens/Logo/cimi sem fundo.png" alt="Logotipo da Cafeteria" width="400px"
+                            height="400px">
+                    </div>
+                    <div class="alinhar">
+                        <img src="Imagens/Icones/icone longin.png" alt="Entrar com as credencias de acesso" width="70px"
+                            height="70px">
+                        <img src="Imagens/Icones/icone carrinho.png" alt="Carrinho de compras" width="70px"
+                            height="70px">
+                        <h4>Carrinho (0)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <nav>
+            <ul class="menuh">
+                <li><a href="#SOBRE">Sobre</a></li>
+                <li><a href="#PRODUTOS">Produtos</a></li>
+                <li><a href="#DESTAQUE">Destaque</a></li>
+                <li><a href="#ENCOMENDE">Encomende</a></li>
+                <li><a href="#CONTATOS">Contatos</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-----------------------------------------------COMEÇA O CARROSEL DE IMAGENS----------------------------------->
+    <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <span id="item-4"></span>
+        <div class="carousel-item item-1">
+            <a href="#item-3" class="arrow-prev arrow"></a>
+            <a href="#item-2" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-2">
+            <a href="#item-1" class="arrow-prev arrow"></a>
+            <a href="#item-3" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-3">
+            <a href="#item-2" class="arrow-prev arrow"></a>
+            <a href="#item-4" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-4">
+            <a href="#item-3" class="arrow-prev arrow"></a>
+            <a href="#item-1" class="arrow-next arrow"></a>
+        </div>
+    </div>
+
+    <!-----------------------------------------------TERMINA O CARROSEL DE IMAGENS----------------------------------->
+
+
+
+
+
+
+    <!--Inicia as tags e o main principal-->
+
+    <main class="main-conteudo"> <!--Tag main conteudo principal dentro do site-->
+        <section class="base-conteudo">
+            <div class="aling">
+                <div class="card">
+                    <img src="Imagens/Icones/icone entregador.png" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Entrega com taxa $3,00</span>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card">
+                        <img src="Imagens/Icones/icone desconto.png" width="80px" height="80px">
+                        <div class="conteudo">
+                            <span>Ofertas Especiais</span>
+                            <p>Descontos Incriveis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <img src="Imagens/Icones/icone novidades.png" width="80px" height="80px">
+                        <div class="conteudo">
+                            <span>Novidades</span>
+                            <p>O que há de novo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <img src="Imagens/Icones/icone telefone.png" width="80px" height="80px">
+                        <div class="conteudo">
+                            <span>Contato</span>
+                            <p>(14)3363-7060</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-cimi">
+            <h1 class="titulo-sobre">SOBRE CIMI SUPERMERCADOS</h1>
+            <div class="conteudo">
+                <div class="texto-sobre">
+                    <p>
+                        Fundado com o compromisso de atender a comunidade de Brotas com qualidade e preços acessíveis, o
+                        Cimi Supermercados é o destino ideal para suas compras do dia a dia. Oferecemos uma grande
+                        variedade de produtos, desde alimentos frescos até itens de higiene e utilidades domésticas.
+                        Nossa missão é proporcionar uma experiência de compra prática e agradável, sempre priorizando o
+                        bem-estar e a satisfação de nossos clientes. No Cimi, você encontra tudo o que precisa em um só
+                        lugar, com ofertas que cabem no seu bolso e um atendimento feito com carinho e dedicação.
+                    </p>
+                    <img src="Imagens/CIMI FRENTE.png" alt="Imagem do supermercado Cimi" />
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="tipos">
+            <h1 class="titulosobre">OFERTAS DA SEMANA</h1>
+            <h2 class="titulosobre">Apresente os folhetos de ofertas em qualquer loja nossa e ele ja esta valendo !!!
+            </h2>
+            <div class="container-categoria">
+                <div class="card-categoria categoria-oferta1">
+                    <p>Oferta 1</p>
+                    <a href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Aqui_%C3%A9_sempre_mais_barato.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+                <div class="card-categoria categoria-oferta2">
+                    <p>Oferta 2</p>
+                    <a href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Segunda_Imbat%C3%ADvel.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+                <div class="card-categoria categoria-oferta3">
+                    <p>Oferta 3</p>
+                    <a
+                        href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Ofertas_Especiais_Feriado_da_Independ%C3%AAncia.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-categoria">
+                <div class="card-categoria categoria-oferta4">
+                    <p>Oferta 4</p>
+                    <a href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Semana%20do%20cliente.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+                <div class="card-categoria categoria-oferta5">
+                    <p>Oferta 5</p>
+                    <a href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Sexta%20de%20ofertas.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+                <div class="card-categoria categoria-oferta6">
+                    <p>Oferta 6</p>
+                    <a href="file:///C:/Users/Jo%C3%A3o%20Fachini/Downloads/Quinta%20de%20ofertas.pdf">
+                        <span>Ver Mais</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!--AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <!--AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <!--AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <!--AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <section class="container top-products">
+            <h1 class="titulosobre">PRODUTOS</h1>
+
+            <div class="container-options">
+                <span class="active">Destaques</span>
+                <span>Mais recentes</span>
+                <span>Mais Vendidos</span>
+            </div>
+
+            <!-- Container Contendo todos os produtos em grid -->
+            <div class="container-produtos">
+
+                <!-- Produto 1 -->
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/Absorvente.jpg" alt="Absorvente" />
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Absorvente Noturno</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$11,65 <span>R$12,90</span></p>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/Arroz.jpg" alt="Arroz" />
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Arroz</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$29,00</p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/açucar.jpg" alt="Açucar " />
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Açucar 1kg</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$8,50</p>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/pao frances.jpg" alt="Pão Frances" />
+                        <span class="discount">30%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Pão Frances kg</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$10,50 <span>R$15,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 5 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/refrigerantes.jpg" alt="Refrigerante" />
+                        <span class="discount">-6%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Refrigenrate</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$8,36<span>R$8,90</span></p>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/suco de laranja.jpg" alt="Suco de laranja" />
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Suco de laranja</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$18<span>R$20,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 7 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/po de cafe.jpg" alt="Po de Cafe" />
+                        <span class="discount">-16%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Po de cafe</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$26,88<span>R$32,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 8 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/toalha humidecida.jpg" alt="Toalha Umidecida" />
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Toalaha humidecida</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$16,00<span>R$18,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 9 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/mucarella.jpg" alt="Muçarela" />
+                        <span class="discount">-50%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Mussarela</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$16,00 o Kg<span>R$38,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 10 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/tomate.jpg" alt="Tomate" />
+                        <span class="discount">-40%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Tomate o kg</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$6,00 <span>R$10,00</span></p>
+                    </div>
+                </div>
+
+
+                <!-- Produto 11 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/Oleo de soja gorri.jpg" alt="Oleo de soja" />
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Oleo de soja</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$4,50</p>
+                    </div>
+                </div>
+
+                <!-- Produto 12 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="Imagens/Produtos/maionese.jpg" alt="Maionese" />
+                        <span class="discount">-22%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Maionese</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$10,92 <span>R$14,00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="titulosobre">LOCALIZAÇÃO LOJA 1</h1>
+
+        <section class="local">
+
+            <iframe
+                src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.0626402643884!2d-48.14115942493141!3d-22.27561687970436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c779afcbaf9067%3A0xc775d727e35d82da!2sCimi%20Supermercados%20-%20Loja%201!5e0!3m2!1spt-BR!2sbr!4v1726659114124!5m2!1spt-BR!2sbr"
+                width="900" height="450" style="border: 3px solid black; border-radius: 20px; box-shadow: 3.5rem;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+        <h1 class="titulosobre">LOCALIZAÇÃO LOJA 2</h1>
+
+        <section class="local">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.0626402643884!2d-48.14115942493141!3d-22.27561687970436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c77900215a747d%3A0xacbdda2dc2469e84!2sCimi%20Supermercados%20-%20Loja%202!5e0!3m2!1spt-BR!2sbr!4v1726658998081!5m2!1spt-BR!2sbr"
+                width="900" height="450" style="border: 3px solid black; border-radius: 20px; box-shadow: 3.5rem;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="container blogs">
+            <h1 class="titulosobre">SAIBA MAIS</h1>
+            <div class="container-blogs">
+                <!-- Card Sorteio -->
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="Imagens/sorteio.jpg" alt="Imagem Sorteio">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Sorteio</h3>
+                        <span>01 de Setembro 2024</span>
+                        <p>Agora, toda vez que você usar <strong>apenas sacolas retornáveis</strong> para fazer suas
+                            compras no <strong>Borcelle</strong>, não é só o planeta que agradece, mas você também ganha
+                            muito!</p>
+                        <p><strong>Como Funciona?</strong><br>
+                            A cada compra que você fizer no <strong>Borcelle</strong>, utilizando <strong>somente
+                                sacolas retornáveis</strong> (nada de sacolinhas plásticas!), você receberá um
+                            <strong>cupom</strong> que dá direito a participar do sorteio de <strong>R$300,00 em
+                                vale-compras</strong> e mais uma <strong>linda ecobag exclusiva do Borcelle</strong>. E
+                            o melhor de tudo: os sorteios acontecem <strong>a cada 15 dias</strong>, então são muitas
+                            chances de ganhar! 🎉🛒
+                        </p>
+                        <p><strong>Regras do Sorteio:</strong><br>
+                            - Só vale utilizar <strong>sacolas retornáveis</strong> (não use sacolinhas plásticas).
+                            ♻️❌<br>
+                            - A cada compra no valor mínimo estipulado, você recebe um cupom.<br>
+                            - Sorteios serão realizados <strong>quinzenalmente</strong>, com os ganhadores anunciados em
+                            nossas redes sociais e na loja.
+                        </p>
+                        <p>Na sua <strong>próxima compra</strong>, traga sua <strong>ecobag</strong>, aproveite nossas
+                            ofertas e quem sabe você não será o próximo ganhador? 🍀🤞</p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+
+                <!-- Card Encomendas -->
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="Imagens/encomenda1.jpg" alt="Imagem Encomendas">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Encomendas</h3>
+                        <span>01 de Janeiro de 2024</span>
+                        <p>🌟 <strong>Atenção, querido cliente!</strong> 🌟 Estamos sempre buscando melhorar o nosso
+                            atendimento para você. Por isso, temos uma novidade: agora, todas as encomendas serão feitas
+                            diretamente com as equipes de recepção, loja 01 ou loja 02.</p>
+                        <p><strong>📍 Como fazer sua encomenda:</strong><br>
+                            1️⃣ <strong>Pessoalmente</strong> – Venha nos visitar e faça sua encomenda na recepção!<br>
+                            2️⃣ <strong>Ligação</strong> – Ligue para o <strong>(14) 3653-1490</strong>.<br>
+                            3️⃣ <strong>WhatsApp</strong> – Envie sua mensagem para <strong>(14) 3653-1490</strong>, e
+                            nosso time estará pronto para ajudar! 📱💬
+                        </p>
+                        <p>Estamos aqui para tornar sua experiência ainda melhor e mais prática! Qualquer dúvida, é só
+                            falar com a gente. Agradecemos pela confiança de sempre e esperamos seu pedido! 🍰</p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+
+                <!-- Card Festival de Donuts -->
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="Imagens/donuts.jpg" alt="Donuts">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Festival de Donuts</h3>
+                        <span>22 e 23 de Agosto 2024</span>
+                        <p><strong>Festival de Donuts no Mercado Borcelle!</strong><br>
+                            Nos dias 22 e 23 de agosto, a partir das 8h, as lojas 1 e 2 do Mercado Borcelle estarão mais
+                            doces do que nunca! É o Festival de Donuts, uma explosão de sabores irresistíveis que você
+                            não vai querer perder.
+                        </p>
+                        <p><strong>Sabores Especiais:</strong><br>
+                            - Kinder Bueno<br>
+                            - Pistache<br>
+                            - Nutella com Leite Ninho<br>
+                            - Brigadeiro<br>
+                            - Doce de Leite<br>
+                            - Morango
+                        </p>
+                        <p>Não perca essa oportunidade de experimentar os melhores donuts da cidade!</p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informação de contato</p>
+                    <ul>
+                        <li>
+                            Av. Rodolfo Guimarães, 1020 - Centro, Brotas - SP, 17380-000
+                        </li>
+                        <li>Telefone: (14) 3653-1490</li>
+                        <li>Fax: (14) 3653-1490</li>
+                        <li>EmaiL: cimi@mercados.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <a
+                                href="https://www.instagram.com/cimisupermercados?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </span>
+                        <span class="whatsapp">
+                            <a href="api.whatsapp.com/send?phone=551436531490">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Informações</p>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Informações de Entrega</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Minha conta</p>
+
+                    <ul>
+                        <li><a href="#">Minha conta</a></li>
+                        <li><a href="#">Históricos de pedidos</a></li>
+                        <li><a href="#">Lista de desejos</a></li>
+                        <li><a href="#">Cupons</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">newsletter</p>
+
+                    <div class="content">
+                        <p>
+                            Se inscreva para ter informações e ofertas exclusivas do MELHOR MERCADO DE BROTAS Cimi
+                            Supermercado
+                        </p>
+                        <input type="email" placeholder="Insira seu email aqui">
+                        <button>Inscreva-se</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desenvolvido por Joao Fachini &copy; 2024
+                </p>
+
+                <img src="Imagens/payment.png" alt="Pagos">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1248 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+/******************************************/
+/*                 HEADER                 */
+/******************************************/
+img {
+    padding: 20px;
+}
+
+.suporte {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.suportecliente {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.alinhar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 330px;
+}
+
+/**************************************************/
+/*                     MENU                       */
+/**************************************************/
+
+.menuh {
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    background-color: #469539;
+    display: flex;
+    align-items: center;
+}
+
+.menuh li {
+    display: inline;
+}
+
+.menuh li a {
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menuh a::after {
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menuh a:hover::after {
+    opacity: 1;
+}
+
+.menuh a:hover {
+    color: #f01b1a;
+}
+
+/*****************************************COMEÇA O CARROSEL DE IMAGENS******************************************************/
+.carousel-wrapper {
+    height: 1010px;
+    position: relative;
+    width: 1590px;
+    display: block;
+    margin: 0px;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('Imagens/carossel\ donuts.png');
+    background-size: cover;
+    width: 1100px; 
+    height: 1000px;
+}
+
+.item-2 {
+    background: url('Imagens/banoffe\ carossel.png ');
+    background-size: cover;
+    width: 1100px; 
+    height: 1000px;
+}
+
+.item-3 {
+    background: url('Imagens/shampoo\ carossel.png');
+    background-size: cover;
+    width: 1100px; 
+    height: 1000px;
+}
+
+.item-4 {
+    background: url('Imagens/frutas\ carossel.png');
+    background-size: cover;
+    width: 1100px; 
+    height: 1000px;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/*****************************************TERMINA O CARROSEL DE IMAGENS******************************************************/
+/**************************************************/
+/*              Inicia-se o banner                */
+/**************************************************/
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020), url('images/capa.png');
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0 10px;
+    background-position: center;
+}
+
+.txtbanner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbanner p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.txtbanner h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.txtbanner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: white;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+}
+
+/**************************************************/
+/*         Conteudo do main principal             */
+/**************************************************/
+
+.main-conteudo {
+    background-color: #5bad4e;
+}
+
+/**************************************************/
+/*                      TAGS                      */
+/**************************************************/
+
+.aling {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.base-conteudo {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    width: 250px;
+    background-color: white;
+    padding: 1.0rem 0;
+    box-shadow: 10px 5px 5px rgb(19, 19, 19);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.conteudo span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.conteudo p {
+    color: #777;
+    font-weight: 400;
+}
+
+/**************************************************/
+/*                     SOBRE                      */
+/**************************************************/
+
+.titulosobre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.just {
+    display: flex;
+    justify-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.texto {
+    font-size: 14px;
+    text-align: justify;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #fff;
+}
+
+/* Estilos para a seção 'sobre-cimi' */
+.sobre-cimi {
+    padding: 20px;
+    background-color: #469539;
+    text-align: center;
+    
+}
+
+.titulo-sobre {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Conteúdo da seção, define como os elementos vão se alinhar */
+.conteudo .texto-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+}
+
+/* Estilo para o texto */
+.texto-sobre p{
+    flex: 1;
+    padding-right: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+}
+
+/* Estilo para a imagem */
+.imagem-sobre {
+    flex: 1;
+    max-width: 500px; /* Limita o tamanho máximo da imagem */
+    margin: 0 auto;
+}
+
+/* Estilo para a imagem em si */
+.imagem-sobre img {
+    width: 100%; /* A imagem ocupará toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 5px solid white; /* Adiciona uma borda branca ao redor da imagem */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column; /* Coloca o texto e a imagem um abaixo do outro em telas pequenas */
+    }
+
+    .texto-sobre {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .imagem-sobre {
+        max-width: 100%;
+    }
+}
+
+/**************************************************/
+/*                    Tipos                       */
+/**************************************************/
+
+.tipos {
+    display: grid;
+    gap: calc(3rem);
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+}
+
+/**************************************************/
+/*                 Destaques                      */
+/**************************************************/
+.container-categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(3rem);
+}
+
+.card-categoria {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.container-categoria .card-categoria a{
+    text-decoration: none;
+}
+
+.categoria-oferta1 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Acogue/Layout\ Carnes.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-oferta2 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Padaria/Layout\ \ Padaria.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-oferta3 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Limpeza/Layout\ Limpeza.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-oferta4 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Hortifruti/Layout\ Hortifruti.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-oferta5 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Higiene/Layout\ \ higiene\ pessoal.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-oferta6 {
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Frios/Layout\ \ laticinios.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.card-categoria p {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+    /*Coloca em minuscula a primeira letra de cada palavra do texto*/
+    position: relative;
+    /*Define a posiçãodos <p> elementos como relativa, o que nos permite posicionar o pseudo-elemento ::after de forma absoluta*/
+}
+
+.card-categoria p::after {
+    content: '';
+    /*Define o conteudo do pseudo-elemento como uma string vazia para criar o pseudo-elemento*/
+    width: 4.5rem;
+    /*O professor pois 2.5rem, porém preferi 4.5rem*/
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    /*Define a posição do pseudo-elemento como absoluta, o que nos permite posiciona-lo em relação ao seu elemento pai*/
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-categoria span {
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    /*Define o formato do cursor como uma mão apontando ao passar o mouse sobre os <span> (elementos)*/
+}
+
+.card-categoria span:hover {
+    /*Quando passa o mouse por cima do elemento, ele muda a cor*/
+    color: white;
+}
+
+/**************************************************/
+/*              MELHORES PRODUTOS                 */
+/**************************************************/
+
+
+.top-produtos {
+    display: flex;
+    /*Define o layout flexivel*/
+    flex-direction: column;
+    /*Direção cos itens é vertical (coluna)*/
+    gap: 2rem;
+    /*Espaçamento entre*/
+    margin-bottom: 3rem;
+    /*Margem inferior*/
+}
+
+.container-options {
+    display: flex;
+    justify-content: center;
+    /*Centralizar os elementos ao longo do elemento (o eixo principal)*/
+    gap: 2rem;
+    /*Espaçamento entre os elementos filhos*/
+    margin-bottom: 2rem;
+    /*Margem inferior*/
+}
+
+.container-options span {
+    color: #777;
+    /*Cor do texto*/
+    background-color: #fff;
+    /*Cor de fundo*/
+    padding: 0.7rem 3rem;
+    /*Espaçamento interno com 0.7 na parte inferior e superior e 3 rem na direita e na esquerda*/
+    font-size: 1.4rem;
+    /*Tamanho da fonte*/
+    text-transform: capitalize;
+    /*Capitaliza o primeiro caractere em cada palavra*/
+    border-radius: 2rem;
+    /*Arredonda as bordas*/
+    cursor: pointer;
+    /*Muda o cursor para indicar que é clicavel*/
+}
+
+.container-options :hover {
+    background-color: #f01b1a;
+    color: #fff;
+}
+
+.container-options span.active {
+    background-color: #f01b1a;
+    color: #fff;
+}
+
+
+
+/**************************************************/
+/*                    PRODUTOS                    */
+/**************************************************/
+
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Mantém 4 colunas */
+    gap: 2rem;
+    /* Diminuir o espaço entre os cards */
+    margin: 0px 50px 50px 50px;
+}
+
+.card-product {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    /* Diminuir o padding para ajustar o tamanho */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Garante que o card ocupe a largura da coluna */
+}
+
+
+.container-img {
+    position: relative;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-img .discount {
+    position: absolute;
+    left: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+    background-color: #000;
+}
+
+/**************************************************/
+/*                    ANIMAÇÃO                    */
+/**************************************************/
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.button-group span {
+    border: 1px solid #f01b1a;
+    padding: 0.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover {
+    background-color: #f01b1a;
+}
+*9+-
+.button-group span i {
+    font-size: 1.5rem;
+    color: #f01b1a;
+}
+
+.button-group span:hover i {
+    color: #fff;
+}
+
+.card-product:hover .button-group {
+    z-index: 0;
+    right: -1rem;
+}
+
+/**************************************************/
+/*                    ESTRELAS                    */
+/**************************************************/
+
+.content-card-product {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 1rem;
+}
+
+.stars {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.stars i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.content-card-product h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.content-card-product h3:hover {
+    color: var(--primary-color);
+}
+
+.add-cart {
+    justify-self: start;
+    border: 2px solid #f01b1a;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover {
+    background-color: #f01b1a;
+}
+
+.add-cart i {
+    font-size: 0.9rem;
+    color: #f01b1a;
+}
+
+.add-cart:hover i {
+    color: #fff;
+}
+
+.content-card-product .price {
+    justify-self: end;
+    align-self: center;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #777;
+    margin-left: 0.5rem;
+}
+
+/**************************************************/
+/*                 LOCALIZAÇÃO                    */
+/**************************************************/
+
+
+.local {
+    display: flex;
+    gap: 2rem;
+}
+
+form {
+    width: 100%;
+    /*Define a largura do fomulário como 100%*/
+    max-width: 400px;
+    /*Define a largura máxima do formulário como 400px*/
+    display: flex;
+    flex-direction: column;
+    /*Define a direção do formulário como coluna*/
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/**************************************************/
+/*                  INFORMATIVO                   */
+/**************************************************/
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 40px 20px 40px 20px;
+    /*Pode usar margin 40px 20px*/
+    padding: 20px 30px 60px 30px;
+    background-color: #f9f5f0;
+    border-radius: 30px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card-blog .container-img {
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /*Oculta o conteudo que excede o container*/
+}
+
+.container-img {
+    border-radius: 10px;
+}
+
+.button-group-blog {
+    position: absolute;
+    /*Define a posição absoluta do grupo de botões*/
+    bottom: 1.2rem;
+    right: -2.5rem;
+    /*Inicialmente posiciona o grupo de botõesa direita fora da tela*/
+    display: flex;
+    gap: 0.7rem;
+    z-index: -1;
+    /*Coloca o grupo de botões atrás do conteudo*/
+    transition: all 0.3s ease;
+    /*Adiciona uma transição suave de 0.3 segundos para o movimento*/
+}
+
+
+
+.card-blog :hover .button-group-blog {
+    z-index: 0;
+    /*Quando oc artão é sobreposto traz o grupo para frente */
+    right: 1.5rem;
+    /*Move o grupo de botões para a posição visivel a direita*/
+}
+
+.button-group-blog span {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group-blog span:hover {
+    font-size: 1rem;
+}
+
+.button-group-blog span:hover i {
+    color: #fff;
+}
+
+.button-group-blog span:hover {
+    background-color: #000;
+
+}
+
+.content-blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #edab5f;
+    font-weight: 400;
+}
+
+.content-blog h3:hover {
+    color: #ff8800;
+    cursor: pointer;
+}
+
+.content-blog p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.content-blog span {
+    color: #c7a17a;
+    font-size: 1.3rem;
+}
+
+.btn-read-more {
+    padding: 1rem 3rem;
+    background-color: #c7a17a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    margin: 2rem 0 5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-read-more :hover {
+    background-color: #000;
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+.footer {
+    background-color: #000;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+    background-color: #f1f0ef;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 30rem;
+    gap: 3rem;
+    justify-items: center;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    list-style: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons span {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.whatsapp{
+    background-color: #469539;
+}
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #c8232c;
+}
+
+.instagram {
+    background: linear-gradient(#405de6,
+            #833ab4,
+            #c13584,
+            #e1306c,
+            #fd1d1d,
+            #f56040,
+            #fcaf45);
+}
+
+.content p {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 300;
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #d2b495;
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: black;
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.content button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.content button:hover {
+    background-color: #f01b1a;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid #d2b495;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .customer-support {
+        display: none;
+    }
+
+    .content-shopping-cart {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 25rem 0;
+    }
+
+    .container-features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .card-feature {
+        padding: 2rem;
+    }
+
+    .heading-1 {
+        font-size: 2.4rem;
+    }
+
+    .card-category {
+        height: 12rem;
+    }
+
+    .card-category p {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .card-category span {
+        font-size: 1.4rem;
+    }
+
+    .container-options {
+        align-items: center;
+    }
+
+    .container-options span {
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    .container-products {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    .gallery {
+        grid-template-rows: repeat(2, 15rem);
+    }
+
+    .container-blogs {
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+
+        height: 52rem;
+    }
+
+    .menu-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+    html {
+        font-size: 42.5%;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        padding: 22rem 0;
+    }
+
+    .heading-1 {
+        font-size: 2.8rem;
+    }
+
+    .card-feature {
+        flex-direction: column;
+        border-radius: 2rem;
+    }
+
+    .feature-content {
+        align-items: center;
+    }
+
+    .feature-content p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .feature-content span {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .container-options span {
+        font-size: 1.8rem;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+    }
+
+    .container-products {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1rem;
+    }
+
+    .container-img .discount {
+        font-size: 2rem;
+    }
+
+    .content-card-product h3 {
+        font-size: 2.2rem;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(2, 20rem);
+    }
+
+    .blogs {
+        padding: 2rem;
+    }
+
+    .container-blogs {
+        grid-template-columns: 1fr;
+        height: 75rem;
+    }
+
+    .content-blog h3 {
+        font-size: 2.4rem;
+    }
+
+    .content-blog span {
+        font-size: 1.8rem;
+    }
+
+    .content-blog p {
+        font-size: 2.2rem;
+    }
+
+    .btn-read-more {
+        font-size: 1.8rem;
+    }
+
+    .contact-info ul,
+    .information ul,
+    .my-account ul {
+        display: none;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .menu-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+}
+
